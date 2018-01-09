@@ -2,7 +2,8 @@ FROM python:alpine as builder
 MAINTAINER Magnus Ullberg <magnus@ullberg.us>
 ARG BUILD_DATE 
 ARG VCS_REF
-ARG VERSION LABEL org.label-schema.build-date=$BUILD_DATE \
+ARG VERSION
+LABEL org.label-schema.build-date=$BUILD_DATE \
                   org.label-schema.name="openstack-client" \
                   org.label-schema.description="Openstack client" \
                   org.label-schema.url="http://ullberg.us/docker/openstack-client" \
