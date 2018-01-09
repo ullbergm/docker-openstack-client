@@ -1,5 +1,12 @@
 OpenStack client
 ================
+[![](https://images.microbadger.com/badges/image/ullbergm/openstack-client.svg)](https://microbadger.com/images/ullbergm/openstack-client)
+[![](https://images.microbadger.com/badges/version/ullbergm/openstack-client.svg)](https://microbadger.com/images/ullbergm/openstack-client)
+[![](https://images.microbadger.com/badges/commit/ullbergm/openstack-client.svg)](https://microbadger.com/images/ullbergm/openstack-client)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ullbergm/openstack-client.svg)]()
+[![Docker Stars](https://img.shields.io/docker/stars/ullbergm/openstack-client.svg)]()
+
+
 
 Usage
 -----
