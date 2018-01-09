@@ -1,0 +1,5 @@
+#!/bin/bash
+tagStart=$(expr index "$IMAGE_NAME" :)  
+repoName=${IMAGE_NAME:0:tagStart-1}
+
+docker tag $IMAGE_NAME ${repoName}:`date -u +"%Y-%m-%d"`
