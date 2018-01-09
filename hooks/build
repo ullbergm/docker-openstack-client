@@ -3,4 +3,7 @@ docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
              --build-arg VCS_REF=`git rev-parse --short HEAD` \
              -t $IMAGE_NAME .
 
-docker tag $IMAGE_NAME ullbergm/openstack-client:`date -u +"%Y-%m-%d"`
+tagStart=$(expr index "$IMAGE_NAME" :)  
+repoName=${IMAGE_NAME:0:tagStart-1}
+
+docker tag $IMAGE_NAME ${repoName}:`date -u +"%Y-%m-%d"`
